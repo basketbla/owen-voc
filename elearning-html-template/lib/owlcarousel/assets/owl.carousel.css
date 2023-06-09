@@ -6,7 +6,15 @@
 /*
  *  Owl Carousel - Core
  */
+
+ .header-carousel .owl-carousel-item {
+  pointer-events: none;
+}
+
 .owl-carousel {
+  touch-action: none;
+  pointer-events: none;
+  -ms-touch-action: none;
   display: none;
   width: 100%;
   -webkit-tap-highlight-color: transparent;
@@ -15,7 +23,6 @@
   z-index: 1; }
   .owl-carousel .owl-stage {
     position: relative;
-    -ms-touch-action: pan-Y;
     -moz-backface-visibility: hidden;
     /* fix firefox animation glitch */ }
   .owl-carousel .owl-stage:after {
